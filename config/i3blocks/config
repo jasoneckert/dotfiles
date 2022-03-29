@@ -1,0 +1,97 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=false
+separator_block_width=15
+
+[sound]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/sound.sh
+
+[devices]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/usb.sh
+
+[wirelesslans]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/wifi.sh
+
+[computerystuff]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/display.sh
+
+[settings]
+color=#f3f4f5
+full_text=" "
+command=gnome-control-center
+
+[twitter]
+color=#f3f4f5
+full_text=" "
+command=firefox https://twitter.com/the_unix_guru
+
+[discord]
+color=#f3f4f5
+full_text=" "
+command=firefox https://discord.com
+
+[github]
+color=#f3f4f5
+full_text=" "
+command=firefox https://github.com
+
+[slack]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/slack-term.sh
+
+[docker]
+color=#f3f4f5
+full_text=" "
+command=/home/jasoneckert/bin/docker.sh
+
+[separator0]
+color=#676E7D
+full_text=""
+
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#f3f4f5
+
+[separator1]
+color=#676E7D
+full_text=""
+
+[ip]
+command=nmcli device show |grep 192.168.1.10|tail -1|cut -c 41-
+interval=once
+color=#f3f4f5
+
+[separator2]
+color=#676E7D
+full_text=""
+
+[time]
+command=date +"%h%d %T"
+interval=1
+
+[separator3]
+color=#676E7D
+full_text=""
+
+[power]
+color=#f3f4f5
+full_text=" "
+command=i3-msg exit
+
