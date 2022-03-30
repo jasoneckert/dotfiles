@@ -1,12 +1,12 @@
 # dotfiles for Asahi Linux
 
-## PART 1: i3 (No gaps)
-
-![Asahi riced](https://github.com/jasoneckert/dotfiles/blob/main/Asahi.png?raw=true)
+## PART 1: i3 (no gaps)
 
 ![Asahi riced background](https://github.com/jasoneckert/dotfiles/blob/main/Asahi_background.png?raw=true)
 
-## PART 2: i3 (With gaps)
+![Asahi riced](https://github.com/jasoneckert/dotfiles/blob/main/Asahi.png?raw=true)
+
+## PART 2: i3 (with gaps)
 
 ![Asahi gaps riced background](https://github.com/jasoneckert/dotfiles/blob/main/Asahi_gaps_background.png?raw=true)
 
